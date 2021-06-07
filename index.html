@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Download My Code HERE!</title>
-</head>
+<link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+
 <style>
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+    position: fixed;
+  top: 0px;
+  width: 100%;
+  opacity: 0.8;
 }
+
 li {
-  display: inline;
-  float:left;
+  float: left;
+  border-right: 1px solid #bbb;
 }
-a {
+
+li a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color .9s;
+}
+
+li a:hover {
+  background-color: orange;
+}
+li img {
+	padding-right:8px;
+}
+section {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  top: 0px;
+  width: 100%;
 }
 </style>
-<body>
-	<nav>
-		<ul>
-			<li><a href="https://example.com"></a></li>
-			<li><a href="https://example.com"></a></li>
-		</ul>
-	</nav>
+<title>Calebs Code</title>
+<script>
+var i = 0;
+var txt = 'Calebs Code';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("ttext").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</head>
+<body style="padding:0px; margin:0px;" onload="typeWriter()">
+<nav style=''>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="download.html">Downloads</a></li>
+  <li href="index.html" style="float:right;"><img src="https://css-world.net/img/about/1.jpg" style="width:10%; border-radius: 50%;float:right;"></li>
+</ul>
+</nav>
+<section style="height:900px; background-size: 100% 100%; background-image: url('https://th.bing.com/th/id/R92013cf45f0ef1a9694625d635e583bf?rik=KzpgtGgaBEcIsQ&pid=ImgRaw');">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<h1 style="text-align: center; font-size: 80px; color:#cccdd1;font-family: 'Aguafina Script'; letter-spacing: 5px;" id="ttext"></h1>
+</section>
+<section style="background-color: #cccdd1">
+	<h1>Download Now</h1>
+</section>
 </body>
 </html>
